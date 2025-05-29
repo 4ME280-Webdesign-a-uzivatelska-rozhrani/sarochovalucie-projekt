@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Týdenní plánovač</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Týdenní plánovač aktivit</h1>
+
+    <div id="planner"></div>
+
+    <div class="custom">
+      <h3>Přidat vlastní aktivitu</h3>
+      <input type="text" id="customActivity" placeholder="Např. Jízda na kole" />
+      <button onclick="addCustomActivity()">➕ Přidat</button>
+    </div>
+
+    <div class="bottom">
+      <button onclick="savePlan()">💾 Uložit plán</button>
+      <p id="status"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
